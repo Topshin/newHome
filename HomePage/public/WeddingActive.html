@@ -1,0 +1,150 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <meta charset="utf-8">
+  <title>My Wedding</title>
+  <!--Latest compiled and minified css -->
+  <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Raleway">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Roboto">
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+  <!--jQuery library -->
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
+  <!--Latest compiled JavaScript -->
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <style>
+    @import url(http://fonts.googleapis.com/earlyaccess/nanumgothic.css);
+    @import url(http://fonts.googleapis.com/earlyaccess/jejugothic.css);
+    body,
+    h1,
+    h2,
+    h3,
+    h4,
+    h5 {
+      font-family: "Raleway", sans-serif
+    }
+
+    .w3-third img {
+      margin-bottom: -6px;
+      opacity: 0.8;
+      cursor: pointer
+    }
+
+    .w3-third img:hover {
+      opacity: 1
+    }
+  </style>
+
+</head>
+
+<body class="w3-light-grey w3-content" style="max-width:1600px">
+  <!-- Sidebar/menu -->
+  <nav class="w3-sidebar w3-bar-block w3-white w3-animate-left w3-text-grey w3-collapse w3-top w3-center" style="z-index:3;width:300px;font-weight:bold" id="mySidebar"><br>
+    <h2 class="w3-padding-64 w3-center"><b>My Wedding<br>2015. 10. 31.</b></h2>
+    <a href="javascript:void(0)" onclick="w3_close()" class="w3-bar-item w3-button w3-padding w3-hide-large">CLOSE</a>
+    <a href="#" onclick="w3_close()" class="w3-bar-item w3-button">Spring</a>
+    <a href="#about" onclick="w3_close()" class="w3-bar-item w3-button">Summer</a>
+    <a href="#contact" onclick="w3_close()" class="w3-bar-item w3-button">Fall</a>
+    <a href="#contact" onclick="w3_close()" class="w3-bar-item w3-button">Winter</a>
+  </nav>
+  <!-- Top menu on small screens -->
+  <header class="w3-container w3-top w3-hide-large w3-white w3-xlarge w3-padding-16">
+    <span class="w3-left w3-padding">2015.10.31.</span>
+    <a href="javascript:void(0)" class="w3-right w3-button w3-white" onclick="w3_open()">☰</a>
+  </header>
+
+  <!-- Overlay effect when opening sidebar on small screens -->
+  <div class="w3-overlay w3-hide-large w3-animate-opacity" onclick="w3_close()" style="cursor:pointer" title="close side menu" id="myOverlay"></div>
+
+  <!-- !PAGE CONTENT! -->
+  <div class="w3-main" style="margin-left:300px">
+
+    <!-- About section -->
+    <div class="w3-container w3-dark-grey w3-center w3-text-light-grey w3-padding-32" id="about">
+      <h4><b>We are</b></h4>
+      <br>
+      <img src="https://firebasestorage.googleapis.com/v0/b/project-8022711787538193035.appspot.com/o/resize_Main.png?alt=media&token=63179f81-775a-484e-812f-77d6714ff75b" alt="Me" class="w3-image w3-padding-30" width="700" height="750">
+      <div class="w3-content w3-justify" style="max-width:700px">
+        <br>
+        <h5>1. We love each other. we will thank each other for living a lifetime.</h5>
+        <h5>2. We enjoy life. We will concentrate on each other without paying attention to others' gaze.</h5>
+        <h5>3. We enjoy life. We will concentrate on each other without paying attention to others' gaze.</h5>
+        <h5>4. We enjoy life. We will concentrate on each other without paying attention to others' gaze.</h5>
+        <h5>5. We enjoy life. We will concentrate on each other without paying attention to others' gaze.</h5>
+      </div>
+    </div>
+
+
+    <!-- Photo grid -->
+    <div class="w3-row">
+      <div class="w3-third">
+        <img src="https://firebasestorage.googleapis.com/v0/b/project-8022711787538193035.appspot.com/o/1031%EC%9E%91%EC%97%85%EB%B3%B8%2Fresize_IMG_0007.jpg?alt=media&token=407383c8-cec6-4ef4-913d-f44ad2531170" style="width:100%" onclick="onClick(this)" alt="wedding card">
+        <img src="https://firebasestorage.googleapis.com/v0/b/project-8022711787538193035.appspot.com/o/1031%EC%9E%91%EC%97%85%EB%B3%B8%2Fresize_IMG_0011.jpg?alt=media&token=67936b9f-5810-42aa-a8c1-e800388b89bb" style="width:100%" onclick="onClick(this)" alt="wedding card">
+        <img src="https://firebasestorage.googleapis.com/v0/b/project-8022711787538193035.appspot.com/o/1031%EC%9E%91%EC%97%85%EB%B3%B8%2Fresize_IMG_0012.jpg?alt=media&token=50c3d17f-9139-4fe7-97c7-b77c01090466" style="width:100%" onclick="onClick(this)" alt="wedding card">
+      </div>
+
+      <div class="w3-third">
+        <img src="https://firebasestorage.googleapis.com/v0/b/project-8022711787538193035.appspot.com/o/1031%EC%9E%91%EC%97%85%EB%B3%B8%2Fresize_IMG_0018.jpg?alt=media&token=4f624f69-04ce-47c5-b236-1a13773af110" style="width:100%" onclick="onClick(this)" alt="wedding card">
+        <img src="https://firebasestorage.googleapis.com/v0/b/project-8022711787538193035.appspot.com/o/1031%EC%9E%91%EC%97%85%EB%B3%B8%2Fresize_IMG_0067.jpg?alt=media&token=4764c223-f5f8-4ad4-b2e7-5e28ce4a0635" style="width:100%" onclick="onClick(this)" alt="wedding card">
+        <img src="https://firebasestorage.googleapis.com/v0/b/project-8022711787538193035.appspot.com/o/1031%EC%9E%91%EC%97%85%EB%B3%B8%2Fresize_IMG_0028.jpg?alt=media&token=1339d322-6faf-42ae-80c0-284433303480" style="width:100%" onclick="onClick(this)" alt="wedding card">
+      </div>
+
+      <div class="w3-third">
+        <img src="https://firebasestorage.googleapis.com/v0/b/project-8022711787538193035.appspot.com/o/1031%EC%9E%91%EC%97%85%EB%B3%B8%2Fresize_IMG_0030.jpg?alt=media&token=7bc3d8f4-1acf-4c15-b08f-cdda417778bd" style="width:100%" onclick="onClick(this)" alt="wedding card">
+        <img src="https://firebasestorage.googleapis.com/v0/b/project-8022711787538193035.appspot.com/o/1031%EC%9E%91%EC%97%85%EB%B3%B8%2Fresize_IMG_0037.jpg?alt=media&token=865b145a-f5b5-4cfb-a1db-bfcb6955340e" style="width:100%" onclick="onClick(this)" alt="wedding card">
+        <img src="https://firebasestorage.googleapis.com/v0/b/project-8022711787538193035.appspot.com/o/1031%EC%9E%91%EC%97%85%EB%B3%B8%2Fresize_IMG_0041.jpg?alt=media&token=c826eba0-9adf-483d-a6c7-8085d3b5e6ab" style="width:100%" onclick="onClick(this)" alt="wedding card">
+      </div>
+    </div>
+
+    <!-- Pagination -->
+    <div class="w3-center w3-padding-32">
+      <div class="w3-bar">
+        <a href="#" class="w3-bar-item w3-button w3-hover-black">«</a>
+        <a href="#" class="w3-bar-item w3-black w3-button">1</a>
+        <a href="#" class="w3-bar-item w3-button w3-hover-black">2</a>
+        <a href="#" class="w3-bar-item w3-button w3-hover-black">3</a>
+        <a href="#" class="w3-bar-item w3-button w3-hover-black">4</a>
+        <a href="#" class="w3-bar-item w3-button w3-hover-black">»</a>
+      </div>
+    </div>
+
+    <!-- Modal for full size images on click-->
+    <div id="modal01" class="w3-modal w3-black" style="padding-top:0" onclick="this.style.display='none'">
+      <span class="w3-button w3-black w3-xlarge w3-display-topright">×</span>
+      <div class="w3-modal-content w3-animate-zoom w3-center w3-transparent w3-padding-64">
+        <img id="img01" class="w3-image">
+        <p id="caption"></p>
+      </div>
+    </div>
+  </div>
+  <footer class="container-fluid" style="margin-top: 16px; background-color: #009688; ">
+    <p style="color: white; text-align: center; margin-top: 16px; margin-left: 300px; font-size: 15px; ">Find me on social media.
+    </p>
+    <p style="text-align: center; margin-left: 300px; color: white; font-size: 15px; ">Powered by <a href="https://www.facebook.com/profile.php?id=100001180609955 " target="_blank " style="color: blue; ">TOPSHIN</a></p>
+  </footer>
+  <script>
+    // Script to open and close sidebar
+    function w3_open() {
+      document.getElementById("mySidebar").style.display = "block";
+      document.getElementById("myOverlay").style.display = "block";
+    }
+
+    function w3_close() {
+      document.getElementById("mySidebar").style.display = "none";
+      document.getElementById("myOverlay").style.display = "none";
+    }
+
+    // Modal Image Gallery
+    function onClick(element) {
+      document.getElementById("img01").src = element.src;
+      document.getElementById("modal01").style.display = "block";
+      var captionText = document.getElementById("caption");
+      captionText.innerHTML = element.alt;
+    }
+  </script>
+</body>
+
+</html>

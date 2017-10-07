@@ -1,0 +1,155 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <meta charset="utf-8">
+  <title>My Wedding</title>
+  <!-- Global Site Tag (gtag.js) - Google Analytics -->
+  <script async src="https://www.googletagmanager.com/gtag/js?id=UA-90937461-1"></script>
+  <script>
+    window.dataLayer = window.dataLayer || [];
+
+    function gtag() {
+      dataLayer.push(arguments);
+    }
+    gtag('js', new Date());
+
+    gtag('config', 'UA-90937461-1');
+  </script>
+
+  <!--Latest compiled and minified css -->
+  <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Raleway">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Roboto">
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+  <!--jQuery library -->
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
+  <!--Latest compiled JavaScript -->
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <style>
+    @import url(http://fonts.googleapis.com/earlyaccess/notosanskr.css);
+    @import url(http://fonts.googleapis.com/earlyaccess/nanumbrushscript.css);
+    @import url(http://fonts.googleapis.com/earlyaccess/nanumgothic.css);
+    @import url(http://fonts.googleapis.com/earlyaccess/jejugothic.css);
+    @import url(http://fonts.googleapis.com/earlyaccess/nanumbrushscript.css);
+    header,
+    h1,
+    h2,
+    h3,
+    h4,
+    h5 {
+      font-family: ‘Noto Sans KR’;
+    }
+
+    .w3-third img {
+      margin-bottom: -6px;
+      opacity: 0.8;
+      cursor: pointer
+    }
+
+    .w3-third img:hover {
+      opacity: 1
+    }
+  </style>
+
+</head>
+
+<body class="w3-light-grey w3-content" style="max-width:1600px">
+  <!-- Sidebar/menu -->
+  <nav class="w3-sidebar w3-bar-block w3-white w3-animate-left w3-text-grey w3-collapse w3-top w3-center" style="z-index:3;width:300px;font-weight:bold;" id="mySidebar"><br>
+    <h1 class="w3-padding-64 w3-center"><b>DH♡AHRA<br>Since 2015.10.31.</b></h1>
+    <a href="javascript:void(0)" onclick="w3_close()" class="w3-bar-item w3-button w3-padding w3-hide-large">CLOSE</a>
+    <a href="https://project-8022711787538193035.firebaseapp.com/WeddingActive.html" onclick="w3_close()" class="w3-bar-item w3-button"><h4>We Married</h4></a>
+    <a href="https://project-8022711787538193035.firebaseapp.com/HoneyMoon.html" onclick="w3_close()" class="w3-bar-item w3-button"><h4>Honeymoon</h4></a>
+    <a href="https://project-8022711787538193035.firebaseapp.com/SoRea.html" onclick="w3_close()" class="w3-bar-item w3-button"><h4>SoRae_Swap</h4></a>
+    <!--
+    <a href="#about" onclick="w3_close()" class="w3-bar-item w3-button">Honeymoon</a>
+    <a href="#contact" onclick="w3_close()" class="w3-bar-item w3-button">Fall</a>
+    <a href="#contact" onclick="w3_close()" class="w3-bar-item w3-button">Winter</a>
+    -->
+  </nav>
+  <!-- Top menu on small screens -->
+  <header class="w3-container w3-top w3-hide-large w3-white w3-xlarge w3-padding-15" style="position:relative;">
+    <span class="w3-left w3-padding">Happy day</span>
+    <a href="javascript:void(0)" class="w3-right w3-button w3-white" onclick="w3_open()">☰</a>
+  </header>
+
+  <!-- Overlay effect when opening sidebar on small screens -->
+  <div class="w3-overlay w3-hide-large w3-animate-opacity" onclick="w3_close()" style="cursor:pointer" title="close side menu" id="myOverlay"></div>
+
+  <!-- !PAGE CONTENT! -->
+  <div class="w3-main" style="margin-left:300px">
+
+    <!-- Photo grid -->
+    <div class="w3-row" id="pic10">
+      <div class="w3-third">
+        <img src="https://firebasestorage.googleapis.com/v0/b/project-8022711787538193035.appspot.com/o/1031%EC%9E%91%EC%97%85%EB%B3%B8%2Fresize_IMG_0609.jpg?alt=media&token=dd0ba606-b1e4-4ceb-b359-2dd68c3b7b8f" style="width:100%" onclick="onClick(this)">
+        <img src="https://firebasestorage.googleapis.com/v0/b/project-8022711787538193035.appspot.com/o/1031%EC%9E%91%EC%97%85%EB%B3%B8%2Fresize_IMG_0622.jpg?alt=media&token=8bd7e9f8-7361-4d9b-a851-650e9b973d79" style="width:100%" onclick="onClick(this)">
+        <img src="https://firebasestorage.googleapis.com/v0/b/project-8022711787538193035.appspot.com/o/1031%EC%9E%91%EC%97%85%EB%B3%B8%2Fresize_IMG_0625.jpg?alt=media&token=9e9bf433-0bac-4ef1-9a0b-168dafd57988" style="width:100%" onclick="onClick(this)">
+      </div>
+
+      <div class="w3-third">
+        <img src="https://firebasestorage.googleapis.com/v0/b/project-8022711787538193035.appspot.com/o/1031%EC%9E%91%EC%97%85%EB%B3%B8%2Fresize_IMG_0667.jpg?alt=media&token=e5bf3adf-6514-46a4-afef-984b2ecc7c28" style="width:100%" onclick="onClick(this)">
+        <img src="https://firebasestorage.googleapis.com/v0/b/project-8022711787538193035.appspot.com/o/1031%EC%9E%91%EC%97%85%EB%B3%B8%2Fresize_IMG_0681.jpg?alt=media&token=9181d564-b43b-462c-af4d-015f0b8b8975" style="width:100%" onclick="onClick(this)">
+        <img src="https://firebasestorage.googleapis.com/v0/b/project-8022711787538193035.appspot.com/o/1031%EC%9E%91%EC%97%85%EB%B3%B8%2Fresize_IMG_0694.jpg?alt=media&token=82e95412-4f2b-4a88-b4bb-52ade846dbda" style="width:100%" onclick="onClick(this)">
+      </div>
+
+      <div class="w3-third">
+        <img src="https://firebasestorage.googleapis.com/v0/b/project-8022711787538193035.appspot.com/o/1031%EC%9E%91%EC%97%85%EB%B3%B8%2Fresize_IMG_0713.jpg?alt=media&token=69c4a206-5942-4072-8937-2b82ed57d50a" style="width:100%" onclick="onClick(this)">
+        <img src="https://firebasestorage.googleapis.com/v0/b/project-8022711787538193035.appspot.com/o/1031%EC%9E%91%EC%97%85%EB%B3%B8%2Fresize_IMG_0689.jpg?alt=media&token=357dd4b2-3a25-48a3-9f8d-84ba4121c61d" style="width:100%" onclick="onClick(this)">
+        <img src="https://firebasestorage.googleapis.com/v0/b/project-8022711787538193035.appspot.com/o/1031%EC%9E%91%EC%97%85%EB%B3%B8%2Fresize_IMG_0724.jpg?alt=media&token=c7c053d7-38e2-4bce-9a75-77be875b3d85" style="width:100%" onclick="onClick(this)">
+      </div>
+    </div>
+
+    <!-- Pagination -->
+    <div class="w3-center w3-padding-32">
+      <div class="w3-bar">
+        <a href="https://project-8022711787538193035.firebaseapp.com/WeddingActive.html" id="#pic1" class="w3-bar-item w3-button w3-hover-black">«</a>
+        <a href="https://project-8022711787538193035.firebaseapp.com/WeddingActive6.html" id="#pic6" class="w3-bar-item w3-button w3-hover-black">6</a>
+        <a href="https://project-8022711787538193035.firebaseapp.com/WeddingActive7.html" id="#pic7" class="w3-bar-item w3-button w3-hover-black">7</a>
+        <a href="https://project-8022711787538193035.firebaseapp.com/WeddingActive8.html" id="#pic8" class="w3-bar-item w3-button w3-hover-black">8</a>
+        <a href="https://project-8022711787538193035.firebaseapp.com/WeddingActive9.html" id="#pic9" class="w3-bar-item w3-button w3-hover-black">9</a>
+        <a href="https://project-8022711787538193035.firebaseapp.com/WeddingActive10.html" id="#pic10" class="w3-bar-item w3-black w3-button">10</a>
+        <a href="https://project-8022711787538193035.firebaseapp.com/WeddingActive11.html" id="#pic10" class="w3-bar-item w3-button w3-hover-black">»</a>
+      </div>
+    </div>
+
+    <!-- Modal for full size images on click-->
+    <div id="modal01" class="w3-modal w3-black" style="padding-top:0" onclick="this.style.display='none'">
+      <span class="w3-button w3-black w3-xlarge w3-display-topright">×</span>
+      <div class="w3-modal-content w3-animate-zoom w3-center w3-transparent w3-padding-64">
+        <img id="img01" class="w3-image">
+        <p id="caption"></p>
+      </div>
+    </div>
+    <footer class="w3-dark-gray container-fluid" style="margin-top: 16px;">
+      <p style="color: white; text-align: center; margin-top: 16px; font-size: 15px;">Find me on social media.</p>
+      <p style="text-align: center; color: white; font-size: 15px; ">Powered by<a href="https://www.facebook.com/profile.php?id=100001180609955 " target="_blank "> TOPSHIN</a></p>
+    </footer>
+  </div>
+
+  <script>
+    // Script to open and close sidebar
+    function w3_open() {
+      document.getElementById("mySidebar").style.display = "block";
+      document.getElementById("myOverlay").style.display = "block";
+    }
+
+    function w3_close() {
+      document.getElementById("mySidebar").style.display = "none";
+      document.getElementById("myOverlay").style.display = "none";
+    }
+
+    // Modal Image Gallery
+    function onClick(element) {
+      document.getElementById("img01").src = element.src;
+      document.getElementById("modal01").style.display = "block";
+      var captionText = document.getElementById("caption");
+      captionText.innerHTML = element.alt;
+    }
+  </script>
+</body>
+
+</html>
